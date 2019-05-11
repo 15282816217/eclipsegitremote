@@ -3,7 +3,7 @@ package org.student.dao;
 import java.util.List;
 
 import org.student.entity.Student;
-
+//123
 public interface IStudentDao {
 		public boolean addStudent(Student student) ;
 
