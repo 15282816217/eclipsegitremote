@@ -3,34 +3,33 @@ package org.student.dao;
 import java.util.List;
 
 import org.student.entity.Student;
-//123
 public interface IStudentDao {
 		public boolean addStudent(Student student) ;
 
 		
-		//根据学号修改学生。根据sno找到这个人，把这个人修改为student
+		//鏍规嵁瀛﹀彿淇敼瀛︾敓銆傛牴鎹畇no鎵惧埌杩欎釜浜猴紝鎶婅繖涓汉淇敼涓簊tudent
 		public boolean updateStudentBySno(int sno,Student student) ;//3->zs,23,bj
 		
 	
 				
-		//根据学号删除学生
+		//鏍规嵁瀛﹀彿鍒犻櫎瀛︾敓
 		public boolean deleteStudentBySno(int sno) ;
 		
 
 		
-		//查询全部学生
+		//鏌ヨ鍏ㄩ儴瀛︾敓
 		public List<Student> queryAllStudents() ;
 			
 			
 		
 		public boolean isExist(int sno) ;
 		
-		//查询总数据数
+		//鏌ヨ鎬绘暟鎹暟
 		public int getTotalCount();
 
 		
 		public List<Student> queryStudentsByPage(int currentPage,int pageSize);
-	//学号查人
+	//瀛﹀彿鏌ヤ汉
 		public Student queryStudentBySno(int sno) ;		
 
 }
